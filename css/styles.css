@@ -6,10 +6,9 @@
     box-sizing: border-box;
 }
 
-/* - Weights: 400, 700 */
 body{
-    font-family: Outfit;
-    font-size: 15px;
+    font-family: "Outfit",Arial,sans-serif;
+    font-size: clamp(14px, 1vw, 18px);
     font-weight: 400;
     background: hsl(212, 45%, 89%);
 }
@@ -23,22 +22,20 @@ main{
 .card{
     width: 20vw;
     padding: 16px;
-    margin:0px auto;
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #fff;
     border-radius: 25px;
-    --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    box-shadow: var(--shadow);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    cursor: pointer;
 }
-.card img{
+.card__img{
     width: 100%;
     border-radius: 25px;
 }
-.card .card-body{
+.card__body{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,12 +43,12 @@ main{
     padding:24px 20px;
     text-align: center;
 }
-.card .card-body h1{
+.card__body h1{
     font-size: 18px;
     font-weight: 700;
     padding: 0 0 14px 0;
 }
-.card .card-body p{
+.card__body p{
     font-size: small;
 }
 .attribution{
@@ -68,19 +65,3 @@ main{
         width: 100%;
     }
 }
-/* @media only screen and (min-width:768px) {
-    main{
-        padding: 12px;
-    }
-     .card{
-        width: 60%;
-    }
-} */
-/* @media only screen and (min-width:1440px) {
-    main{
-        padding: 12px;
-    }
-     .card{
-        width: 60%;
-    }
-} */
